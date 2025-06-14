@@ -1,0 +1,226 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* Light Grey Background */
+    color: #333333; /* Dark Grey Text */
+}
+.header-top {
+    background-color: #000000; /* Black for Danger */
+    padding: 10px 20px;
+    text-align: right;
+}
+.header-top a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.header-main {
+    background-color: #8B0000; /* Dark Red */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+.header-main .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.search-bar {
+    display: none;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background-color: #000000; /* Black */
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0 0 10px 0;
+}
+.hero-text p {
+    font-size: 1.2em;
+}
+
+.counter-section {
+    margin-top: 20px;
+}
+
+.money-counter {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #FFC300;
+    margin-top: 10px;
+}
+.hero-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.article-content {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 8px;
+    color: #333333;
+}
+.article-content h2 {
+    font-size: 2em;
+    color: #8B0000; /* Dark Red */
+    border-bottom: 2px solid #8B0000; /* Dark Red */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.article-content p, .article-content ul {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.image-gallery img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #000000; /* Black for Danger */
+    color: white;
+}
+
+.supporters {
+    margin-bottom: 20px;
+}
+
+.supporter-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.supporter-logos p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Classes for replaced inline styles */
+.petition-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.italic-text {
+    font-style: italic;
+    color: #cccccc;
+}
+
+#petition-form {
+    margin-top: 30px;
+}
+
+#signature-form {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group-half {
+    margin-bottom: 15px;
+}
+
+#signature-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#signature-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+#signature-form button[type="submit"] {
+    background-color: #FFC300;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-twitter {
+    background-color: #1DA1F2;
+}
+
+.btn-facebook {
+    background-color: #4267B2;
+}
+
+.btn-telegram {
+    background-color: #0088CC;
+}
+
+.btn-reddit {
+    background-color: #FF4500;
+}
