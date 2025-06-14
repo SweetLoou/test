@@ -4,201 +4,273 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metawin Exposed: A Campaign for Justice</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Teko:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="header-main">
+
+    <header id="main-header">
+        <nav class="container">
             <div class="logo"><i class="fas fa-exclamation-triangle"></i> METAWIN EXPOSED</div>
-            <a href="#petition-form" class="petition-button">Sign The Petition</a>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#story">The Story</a></li>
+                <li><a href="#evidence">Evidence</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#demands">Our Demands</a></li>
+            </ul>
+            <a href="#petition-form" class="btn btn-primary">Sign The Petition</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <div class="hero-section">
-            <div class="hero-text">
-                <h1>METAWIN CASINO: STOP THE SCAM!</h1>
-                <p>Affiliates and Players Unite Against Withheld Payments, Broken Promises, and Deceptive Practices.</p>
-                <div class="counter-section">
-                    <h2>Total Owed to Affiliates:</h2>
-                    <div id="money-counter" class="money-counter">$15,000</div>
-                    <h2>Petition Signatures:</h2>
-                    <div id="petition-counter" class="money-counter">0</div>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Stop the Metawin Scam</h1>
+                <p class="subtitle">Affiliates and players are uniting against withheld payments, broken promises, and deceptive practices. We demand accountability.</p>
+                <div class="stats-counters">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Commissions Owed</span>
+                        <span id="money-counter" class="stat-value">$15,000</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Campaign Signatures</span>
+                        <span id="petition-counter" class="stat-value">0</span>
+                    </div>
+                     <div class="stat-item">
+                        <span class="stat-label">Affected Victims</span>
+                        <span id="victim-counter" class="stat-value">12</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="IMG/image.png" alt="Metawin Affiliate Tracker">
+        </section>
+
+        <section id="story" class="content-section">
+            <div class="container">
+                <h2>The Anatomy of a Scam</h2>
+                <p class="section-intro">This isn't just a misunderstanding; it's a calculated deception. I joined Metawin’s affiliate program based on clear promises of crypto payouts and VIP support. What followed was a playbook of broken promises, moving goalposts, and outright refusal to pay.</p>
+                
+                <div class="story-grid">
+                    <div class="story-point">
+                        <h3><i class="fas fa-handshake"></i> The Bait: Promises of Crypto & VIPs</h3>
+                        <p>I negotiated directly with their representative for a crypto-based rev-share agreement to bring high-value players. Initial payments were made, building a false sense of security.</p>
+                    </div>
+                    <div class="story-point">
+                        <h3><i class="fas fa-exchange-alt"></i> The Switch: Fiat Demands & Broken Tech</h3>
+                        <p>Once my rev-share balance grew significantly, Metawin reneged on the crypto agreement, demanding fiat banking and KYC. Simultaneously, my affiliate dashboard conveniently "broke," hiding my earnings.</p>
+                    </div>
+                    <div class="story-point">
+                        <h3><i class="fas fa-user-slash"></i> The Betrayal: VIP Players Abandoned</h3>
+                        <p>Two high-rollers I referred, who deposited $10,000 each based on explicit bonus and VIP status deals, were stripped of their perks days later with flimsy excuses, damaging my professional reputation.</p>
+                    </div>
+                     <div class="story-point">
+                        <h3><i class="fas fa-ghost"></i> The Ghosting: Support Disappears</h3>
+                        <p>When I sought resolution, support became unreachable. Telegram, Discord, and email queries were ignored or deflected, leaving me and my players with no recourse.</p>
+                    </div>
+                </div>
+                 <blockquote class="pull-quote">
+                    "People are already losing to the house edge. Why be so greedy and scam the people that make you popular?"
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2>Timeline of Deception</h2>
+                 <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Late 2024: The Agreement</h4>
+                            <p>Affiliate partnership formed with their representative, agreeing to crypto payouts and VIP terms for referrals.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Early 2025: Initial Success & Red Flags</h4>
+                            <p>First referral (brother-in-law) is successful. After a dispute over "shared IP," the player is reinstated and a single crypto payment is made.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Mid 2025: The Money Grows, The Rules Change</h4>
+                            <p>As rev-share balance exceeds $15,000, Metawin halts all crypto payments, demanding KYC and fiat banking. The "shared IP" excuse is revived.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Mid 2025: VIP Betrayal</h4>
+                            <p>High-rollers depositing $20,000 total are stripped of their promised VIP status and bonuses without warning or valid reason.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Present: System Failure & Silence</h4>
+                            <p>The affiliate dashboard is broken, hiding all tracking data. All support channels have gone silent. The campaign for justice begins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="evidence" class="evidence-section">
+            <div class="container">
+                <h2>The Evidence Locker</h2>
+                <p class="section-intro">Words are one thing, but proof is another. We have documented everything. Explore the evidence of Metawin's contradictory statements, broken promises, and manipulated data.</p>
+                <div class="image-gallery">
+                    <!-- Data attributes will be used by JS to populate the lightbox -->
+                    <div class="gallery-item" data-src="IMG/image.png" data-title="Affiliate Tracker - Healthy NGR" data-description="May 2025: Affiliate tracker showing a healthy $1098.98 Net Gaming Revenue (NGR). This was before the dashboard became inaccessible and the numbers were manipulated.">
+                        <img src="IMG/image.png" alt="Metawin Affiliate Tracker - May 2025">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                    <div class="gallery-item" data-src="IMG/image copy.png" data-title="Affiliate Dashboard - Manipulated Data" data-description="June 2025: The same dashboard now shows a nonsensical NGR of $0.04 despite over $9,800 in wagering, showcasing either broken or intentionally manipulated tracking.">
+                        <img src="IMG/image copy.png" alt="Metawin Affiliate Dashboard - June 2025">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                    <div class="gallery-item" data-src="IMG/image copy 2.png" data-title="Email: Acknowledging Revenue Share" data-description="Email from a Metawin representative confirming a 30% revenue share structure and acknowledging generated commissions, which were later withheld.">
+                        <img src="IMG/image copy 2.png" alt="Email proof of rev share">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                     <div class="gallery-item" data-src="IMG/image copy 4.png" data-title="GAFFG Review: Confirming Crypto Payments" data-description="A screenshot from affiliate portal GAFFG, stating that Metawin payments 'will be sent via Ethereum,' contradicting their later demands for fiat banking.">
+                        <img src="IMG/image copy 4.png" alt="GAFFG Metawin Review - Payment Methods Ethereum">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                    <!-- Add more gallery items for all other images -->
+                    <div class="gallery-item" data-src="IMG/image copy 3.png" data-title="GAFFG Review: Confirming Rev Share" data-description="Another screenshot from GAFFG confirming a standard 30% Rev Share, aligning with the initial agreement.">
+                        <img src="IMG/image copy 3.png" alt="GAFFG Metawin Review - Rev Share 30%">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                     <div class="gallery-item" data-src="IMG/image copy 5.png" data-title="Email: Confirming Player Addition" data-description="An email from a representative confirming a referred player has been added to the affiliate account.">
+                        <img src="IMG/image copy 5.png" alt="Email confirmation">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                    <div class="gallery-item" data-src="IMG/image copy 6.png" data-title="Telegram: Ignoring Support Request" data-description="A screenshot of a Telegram conversation showing a support request being read and then ignored by the Metawin representative.">
+                        <img src="IMG/image copy 6.png" alt="Telegram support ignored">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                    <div class="gallery-item" data-src="IMG/image copy 7.png" data-title="Discord: Denying VIP Terms" data-description="A Discord chat where a Metawin staff member denies the previously agreed-upon VIP terms for a high-value player.">
+                        <img src="IMG/image copy 7.png" alt="Discord VIP denial">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                    <div class="gallery-item" data-src="IMG/image copy 8.png" data-title="Dashboard: Player Disappears" data-description="The affiliate dashboard showing a player who had significant activity is now missing from the list entirely.">
+                        <img src="IMG/image copy 8.png" alt="Player missing from dashboard">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                    <div class="gallery-item" data-src="IMG/image copy 9.png" data-title="Email: Contradictory Payout Information" data-description="An email chain where two different support agents provide conflicting information about payout methods and requirements.">
+                        <img src="IMG/image copy 9.png" alt="Contradictory payout emails">
+                        <div class="overlay">View Evidence</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demands" class="content-section">
+            <div class="container">
+                <h2>Our Collective Demands</h2>
+                <p class="section-intro">To right these wrongs, we demand Metawin Casino take the following immediate and transparent actions:</p>
+                <ul class="demands-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Pay All Owed Commissions:</strong> Release the outstanding $15,000+ in rev-share via crypto, as originally agreed.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Honor VIP Agreements:</strong> Reinstate all promised VIP statuses and benefits for our referred players.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Restore Dashboard Access:</strong> Provide full, transparent, and functional access to the affiliate dashboard.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>End Unethical Practices:</strong> Cease using baseless accusations to withhold payments and stop changing terms retroactively.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Publish Clear Terms:</strong> Publicly clarify all affiliate and VIP terms to prevent future deception.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2>Are You a Victim?</h2>
+                <p class="section-intro">You are not alone. Others have faced similar issues. If Metawin has wronged you, share your story and strengthen our case.</p>
+                <div class="testimonial-grid">
+                    <div class="testimonial">
+                        <p>"They did the same to me. Promised a VIP level for my friend, then downgraded him a week later. Support just ignored my messages."</p>
+                        <span>- Another Affiliate</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>"My affiliate dashboard has shown $0 for three months despite my players being active. It's a total scam."</p>
+                        <span>- Player_X_Referrals</span>
+                    </div>
+                </div>
+                <div class="text-center mt-30">
+                     <a href="mailto:justice@metawinexposed.com?subject=My Metawin Story" class="btn btn-secondary">Share Your Story Securely</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="petition-form" class="petition-section">
+            <div class="container">
+                <h2>Join The Fight: Sign The Petition</h2>
+                <p>Every signature adds pressure and brings us one step closer to justice. Stand with us against fraudulent online practices.</p>
+
+                <form id="signature-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Add My Name to the Campaign</button>
+                    </div>
+                    <div id="form-message"></div>
+                    <p class="privacy-note">We respect your privacy. Your email will only be used for campaign updates.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section social-media">
+                    <h3>Follow Our Campaign</h3>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/metawinexposed" target="_blank" rel="noopener noreferrer" title="Twitter"><img src="IMG/X (Twitter) Logo.png" alt="Twitter"></a>
+                        <a href="https://instagram.com/metawinexposed" target="_blank" rel="noopener noreferrer" title="Instagram"><img src="IMG/Instagram Logo.png" alt="Instagram"></a>
+                        <a href="https://tiktok.com/@metawinexposed" target="_blank" rel="noopener noreferrer" title="TikTok"><img src="IMG/TikTok Logo.png" alt="TikTok"></a>
+                        <a href="https://t.me/metawinexposed" target="_blank" rel="noopener noreferrer" title="Telegram"><img src="IMG/Telegram Logo.png" alt="Telegram"></a>
+                        <a href="https://discord.gg/metawinexposed" target="_blank" rel="noopener noreferrer" title="Discord"><img src="IMG/Discord Logo.png" alt="Discord"></a>
+                    </div>
+                </div>
+                <div class="footer-section supporters">
+                    <h3>Supported By</h3>
+                    <div class="supporter-logos">
+                        <a href="https://casinoguru.com" target="_blank" rel="noopener noreferrer"><img src="IMG/casinoguru-logo.png" alt="CasinoGuru Logo"></a>
+                        <a href="https://askgamblers.com" target="_blank" rel="noopener noreferrer"><img src="IMG/askgamblers-logo.png" alt="AskGamblers Logo"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Responsible Gaming</h3>
+                    <div class="supporter-logos">
+                        <a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer"><img src="IMG/gamcare-logo.png" alt="GamCare Logo"></a>
+                        <a href="https://begambleaware.org" target="_blank" rel="noopener noreferrer"><img src="IMG/gambleaware-logo.png" alt="GambleAware Logo"></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="IMG/18-plus-logo.png" alt="18+ Logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="disclaimer">
+                    This website represents the personal experiences and collected evidence of affiliates and players. All information is presented for the purpose of public awareness and to seek a fair resolution.
+                </p>
+                <p>© 2025 Justice for Metawin Victims. All Rights Reserved.</p>
             </div>
         </div>
+    </footer>
 
-        <div class="article-content">
-            <h2>Our Full Story: The Metawin Deception</h2>
-            <p>
-                After months as an affiliate, I'm blowing the whistle on Metawin Casino for fraudulent practices,
-                broken VIP promises, forced fiat banking despite crypto agreements, and non-existent customer support.
-                If you're an affiliate or high-roller, read my full account before doing business with them.
-            </p>
-            <p class="italic-text">
-                People are already losing to the house edge, why being so greedy and scamming the people that makes them popular.
-            </p>
-
-            <h4>The Bait: Promises of Crypto Payouts & VIPs</h4>
-            <p>
-                I joined Metawin’s affiliate program late last year, negotiating directly with their representative,
-                "Phil." The appeal was clear: crypto-based payouts for affiliates, a decent rev-share, and the ability
-                to bring high-value VIPs from other major sites. My very first referral was a real-life friend
-                (my <strong>brother-in-law</strong>) who signed up from my own house, played regularly,
-                and deposited as agreed.
-            </p>
-            <p>
-                At the outset, there was a mandatory two-month waiting period before they paid out the $100 referral
-                bonus. I waited. But after that, I checked my affiliate panel—and my referred player had disappeared
-                without so much as an email or notification. With no onsite support, I spent days chasing Discord reps
-                until I finally got Phil’s email.
-            </p>
-            <p>
-                He claimed there was a "shared IP" concern (despite full explanations and proof of the player's IRL
-                relationship and his home address). After weeks of going in circles, they eventually reinstated my
-                player and paid me the bonus, plus a <strong>single month of rev-share (in crypto, as promised)</strong>.
-                For a moment, I thought it was sorted.
-            </p>
-
-            <h4>The Switch: When the Money Got Real</h4>
-            <p>
-                Once my rev-share balance began to grow over the following two months, things suddenly changed:
-            </p>
-            <ul>
-                <li>Metawin <strong>stopped all further crypto payments</strong>, demanding fiat banking info and KYC (nowhere in the original agreement).</li>
-                <li>When I asked for the crypto option, I got silence or deflection.</li>
-                <li>They suddenly <strong>revived the “self-referral” excuse</strong>, despite already investigating and clearing it before paying me.</li>
-                <li>Support became virtually unreachable—Telegram admins and Discord reps just passed the buck.</li>
-                <li>My affiliate dashboard broke, making it impossible to track earnings or referrals.</li>
-            </ul>
-
-            <h4>The VIP Player Betrayal</h4>
-            <p>
-                At the same time, I’d brought in two high-roller players from Stake/Shuffle, under explicit agreements
-                for their Salon Rouge VIP status:
-            </p>
-            <ul>
-                <li><strong>Player 1: $10,000 deposit</strong>, promised 80% loss-back in 24 hours.</li>
-                <li><strong>Player 2: $10,000 deposit</strong>, $5,000 upfront bonus + Salon Rouge.</li>
-            </ul>
-            <p>
-                Both players received VIP status, only to be <strong>downgraded days later with zero transparency</strong>,
-                simply told they hadn’t “played enough” (never part of the deal, and the volume required was never disclosed).
-                I now look like a scammer to my own contacts.
-            </p>
-
-            <h2>Our Evidence: Proof of Deception</h2>
-            <p>We've meticulously documented Metawin Casino's deceptive practices. Below are examples of the evidence we possess:</p>
-            <div class="image-gallery">
-                <img src="IMG/image.png" alt="Metawin Affiliate Tracker - May 2025" title="Metawin Affiliate Tracker (May 2025): Showing $1098.98 NGR with only 5 clicks. This dashboard later became inaccessible.">
-                <img src="IMG/image copy.png" alt="Metawin Affiliate Dashboard - June 2025" title="Metawin Affiliate Dashboard (June 2025): NGR drastically reduced to $0.04 with $9k+ wagering, showcasing a manipulated view or broken tracking.">
-                <img src="IMG/image copy 2.png" alt="Referral Earnings Overview" title="Referral Earnings Overview: Total referrals, total wagered, and referral earnings ($273,336.45) from another affiliate's dashboard, highlighting significant potential earnings if paid.">
-                <img src="IMG/image copy 3.png" alt="GAFFG Metawin Review - Rev Share 30%" title="GAFFG Metawin Review (1): Showing a standard 30% Rev Share, confirming affiliate terms.">
-                <img src="IMG/image copy 4.png" alt="GAFFG Metawin Review - Payment Methods Ethereum" title="GAFFG Metawin Review (2): Indicating payments sent via Ethereum, which Metawin later reneged on.">
-                <img src="IMG/image copy 5.png" alt="Image 5">
-                <img src="IMG/image copy 6.png" alt="Image 6">
-                <img src="IMG/image copy 7.png" alt="Image 7">
-                <img src="IMG/image copy 8.png" alt="Image 8">
-                <img src="IMG/image copy 9.png" alt="Image 9">
-                <img src="IMG/image copy 10.png" alt="Image 10">
-                <img src="IMG/image copy 11.png" alt="Image 11">
-                <img src="IMG/image copy 12.png" alt="Image 12">
-                <img src="IMG/image copy 13.png" alt="Image 13">
-                <img src="IMG/image copy 14.png" alt="Image 14">
-                <img src="IMG/image copy 15.png" alt="Image 15">
-                <img src="IMG/image copy 16.png" alt="Image 16">
-                <img src="IMG/image copy 17.png" alt="Image 17">
-                <img src="IMG/image copy 18.png" alt="Image 18">
-                <img src="IMG/image copy 19.png" alt="Image 19">
-            </div>
-
-            <h2>Our Collective Demands</h2>
-            <p>We demand that Metawin Casino take immediate action to rectify their fraudulent and unethical practices:</p>
-            <ul>
-                <li><strong>Pay All Rev-Share Owed:</strong> Release all outstanding commissions (over <strong>$15,000</strong>) in crypto, as originally agreed.</li>
-                <li><strong>Reinstate VIP Statuses:</strong> Honor all promised VIP perks (like Salon Rouge) and benefits for our referred high-value players.</li>
-                <li><strong>Restore Affiliate Dashboard:</strong> Provide full, transparent, and functional access to the affiliate dashboard for proper tracking of earnings and referrals.</li>
-                <li><strong>End Abusive Practices:</strong> Cease the retroactive and baseless accusations of “self-referral” or “shared IP” after payments are due, and stop unilaterally changing terms.</li>
-                <li><strong>Publicly Clarify Terms:</strong> Publish clear, unambiguous affiliate and VIP terms to prevent future deception and goalpost-moving.</li>
-            </ul>
-        </div>
-
-        <div class="article-content" id="petition-form">
-            <h2>Join Our Fight: Sign the Petition!</h2>
-            <p>Every signature adds weight to our collective voice. By signing, you're helping to expose Metawin's deceptive practices and demand justice for all affected affiliates and players.</p>
-
-            <form id="signature-form">
-                <div class="form-group-half">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-actions">
-                    <button type="submit">Sign the Petition</button>
-                </div>
-                <div id="form-message"></div>
-            </form>
-        </div>
-
-        <div class="article-content mt-30 text-center">
-            <h2>Spread the Word!</h2>
-            <p>Share this page on social media and help us reach more people.</p>
-            <div>
-                <a href="#" class="btn btn-twitter"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="#" class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-                <a href="#" class="btn btn-telegram"><i class="fab fa-telegram-plane"></i> Telegram</a>
-                <a href="#" class="btn btn-reddit"><i class="fab fa-reddit-alien"></i> Reddit</a>
-            </div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">×</span>
+            <img src="" alt="Evidence" id="lightbox-img">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-description"></p>
         </div>
     </div>
 
-    <footer>
-        <div class="supporters">
-            <h3>Supported By</h3>
-            <div class="supporter-logos">
-                <p>CasinoGuru</p>
-                <p>AskGamblers</p>
-            </div>
-        </div>
-        <p>© 2025 Justice for Metawin Victims. All rights reserved.</p>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const moneyCounter = document.getElementById('money-counter');
-            let currentAmount = 15000;
-            const targetAmount = 1000000; // Example target amount
-            const intervalTime = 1000; // Update every 1000ms for smooth counting
-            const increment = 50; // Amount to increment each time
-
-            const counterInterval = setInterval(() => {
-                currentAmount += increment;
-                if (currentAmount >= targetAmount) {
-                    currentAmount = targetAmount;
-                    clearInterval(counterInterval);
-                }
-                moneyCounter.textContent = `$${currentAmount.toLocaleString()}`;
-            }, intervalTime);
-
-            const petitionCounter = document.getElementById('petition-counter');
-            let petitionCount = 0;
-            const petitionInterval = setInterval(() => {
-                petitionCount++;
-                petitionCounter.textContent = petitionCount.toLocaleString();
-            }, 60000); // Increment every minute
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
